@@ -1,3 +1,11 @@
 type Mutation {
   createRoom(roomName: String!): VoidResponse
 }
+
+type Room {
+  roomName:String!
+}
+
+type Query {
+  room: [Room]
+}

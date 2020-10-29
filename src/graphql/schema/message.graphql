@@ -1,12 +1,14 @@
 type Message {
-  id: String!
+  id: String
   body: String!
   image: String
-  from: Sender!
+  from: String!
+  roomName:String!
 }
 
 type VoidResponse {
   successful: Boolean
+  roomName: String
 }
 
 type Query {
@@ -14,7 +16,7 @@ type Query {
 }
 
 type Mutation {
-  sendMessage(roomName: String!, message: String!): VoidResponse
+  sendMessage(roomName: String!, body: String!, image: String, from: String!, timestamp: String!): VoidResponse
 }
 
 type Subscription {

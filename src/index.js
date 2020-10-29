@@ -6,9 +6,12 @@ const server = new ApolloServer({
   typeDefs: gql`
     ${typeDefs}
   `,
-  resolvers
+  resolvers,
+  introspection: true,
+  playground: true,
 });
 
-server.listen().then(({ url }) => {
+server.listen().then(({ url, subscriptionsUrl }) => {
   console.log(`🚀  Server ready at ${url}`);
+  console.log(`🚀 Subscriptions ready at ${subscriptionsUrl}`);
 });

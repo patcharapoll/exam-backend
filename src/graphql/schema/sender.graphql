@@ -1,3 +1,11 @@
 type Sender {
   name: String
 }
+
+type Mutation {
+  createSender(name: String!): Sender
+}
+
+type Query {
+  sender: [Sender]
+}
