@@ -2,7 +2,11 @@
 
 Task: GraphQL-powered Chatroom
 
-### Time limit: 3 hours
+## Build Setup And Run
+```bash
+$ docker-compose up
+```
+RUN ON PORT 4000
 
 ## Description
 
