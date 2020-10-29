@@ -8,6 +8,18 @@ $ docker-compose up
 ```
 RUN ON PORT 4000
 
+## DATA SET
+```bash
+# Room name
+ทดสอบห้อง01
+room1
+room2
+```
+-ได้สร้างห้องที่มี message อยู่แล้วเป็นจำนวน 3 ห้อง
+-สามารถเพิ่มห้องได้
+
+RUN ON PORT 4000
+
 ## Description
 
 ​ Please create a chatroom API using GraphQL. You may use the following schema
