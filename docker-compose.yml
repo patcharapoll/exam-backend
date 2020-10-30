@@ -1,9 +1,7 @@
 version: "3.5"
 services:
     service-chat:
-        build:
-            context: ./
-            dockerfile: Dockerfile
+        image: 0917798273/docker-demo:backend_graphQL
         volumes: 
             - ./:/usr/src/app
             - /usr/src/app/node_modules
